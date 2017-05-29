@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+body {
+	padding: 20px;
+}
+#container {
+	position: relative;
+	/* width is equal to image */
+	width: 500px;
+	height: 600px;
+	border: 3px solid #333;
+	overflow: hidden;
+}
+#list {
+	position: absolute;
+	/* wide enough to contain all images horizontally */
+	width: 9999px; 
+	/* to accompolish float element over it */
+	z-index: 1;
+	left: 0px;
+}
+#list img {
+	width: 500px;
+	height: 600px;
+	float: left;
+}
+#btns {
+	position: absolute;
+	height: 10px;
+	width: 100px;
+	z-index: 2;
+	bottom: 20px;
+	left: 200px;
+}
+#btns span {
+	cursor: pointer;
+	float: left;
+	border: 1px solid #fff;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #333;
+	margin-right: 5px;
+}
+#btns .on {
+	background-color: #ff4500;
+}
+.arrow {
+	cursor: pointer;
+	display: none;
+	line-height: 39px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	z-index: 2;
+	top: 250px;
+	color: #7c2895;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.arrow:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+#container:hover .arrow {
+    display: block;
+}
+#prev {
+	left: 20px;
+}
+#next {
+	right: 20px;
+}

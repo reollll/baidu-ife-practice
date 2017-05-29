@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<html lang="zh-CN">
+    <head>
+        <meta charset = "UTF-8">
+    	<title>Murphy的个人博客</title>
+    	<!-- <link rel = "stylesheet" href = "css/style.css"> -->
+    	<link rel="shortcut icon" href="img/logo.png">
+    	<style type="text/css">
+    	    .content {position: relative; background-color: #dddddd; width: 700px; height: 500px;}
+    	    .block-container {display: inline-block; position: absolute; background-color: #fff; width: 200px; height: 450px; border: 1px #000 solid; margin: 25px 0 50px 0;} 
+            #container1 {left: 100px; }
+            #container2 {right: 100px;}
+    	    .block {background-color: #f00; width: 200px; height: 50px; border-bottom: 1px #000 solid; color: #00f; text-align: center; cursor: move;}
+    	</style>
+    </head>
+    <body>
+    <div class = "content">
+        <div class = 'block-container' id = "container1">
+        	<div class = 'block' draggable = "true" id = '1'>1</div>
+        	<div class = 'block' draggable = "true" id = '2'>2</div>
+        	<div class = 'block' draggable = "true" id = '3'>3</div>
+        	<div class = 'block' draggable = "true" id = '4'>4</div>
+        </div>
+        <div class = 'block-container' id = "container2">
+        	<div class = 'block' draggable = "true" id = '5'>5</div>
+        	<div class = 'block' draggable = "true" id = '6'>6</div>
+        	<div class = 'block' draggable = "true" id = '7'>7</div>
+        	<div class = 'block' draggable = "true" id = '8'>8</div>
+        </div>
+    </div>
+    <script type="text/javascript" src = "javascript/util.js"></script>
+    <script type="text/javascript" src = "javascript/task0002_5.js"></script>
+    </body>
+</html>
