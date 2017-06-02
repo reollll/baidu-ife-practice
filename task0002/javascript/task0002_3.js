@@ -11,7 +11,7 @@ window.onload = function() {
 	function play() {
 		timer = setInterval(function() {
 			if(!animated) {
-			    animate(-500);
+			    animate(-800);
 			}
 		}, 2000);
 	}
@@ -38,12 +38,12 @@ window.onload = function() {
             if((speed > 0 && parseInt(list.style.left) + speed > newLeft) || (speed < 0 && parseInt(list.style.left) + speed < newLeft)) {
             	list.style.left = newLeft + "px";
             	animated = false;
-                if(newLeft < -2500) {
-        	        list.style.left = -500 + "px";
-                } if(newLeft > -500) {
-        	        list.style.left = -2500 + "px";
+                if(newLeft < -4000) {
+        	        list.style.left = -800 + "px";
+                } if(newLeft > -800) {
+        	        list.style.left = -4000 + "px";
                 }
-                index = Math.floor(parseInt(list.style.left) / (-500));
+                index = Math.floor(parseInt(list.style.left) / (-800));
                 showButton(index);
                 clearTimeout(t);
             };
@@ -52,12 +52,12 @@ window.onload = function() {
 	}
 	jq.click("#next", function() {
 		if(!animated) {
-			animate(-500);
+			animate(-800);
 		}
 	});
 	jq.click("#prev", function() {
 		if(!animated) {
-			animate(500);
+			animate(800);
 		}
 	});
 	jq.delegate("#btns", "span", "click", function() {
@@ -65,7 +65,7 @@ window.onload = function() {
 		var currentIndex = jq(".on")[0].getAttribute("index");
 		var indexDiff = nextIndex - currentIndex;
 		if(!animated) {
-			animate(-500 * indexDiff);
+			animate(-800 * indexDiff);
 		}
 	});
 }

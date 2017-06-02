@@ -9,10 +9,11 @@ body {
 #container {
 	position: relative;
 	/* width is equal to image */
-	width: 500px;
-	height: 600px;
+	width: 800px;
+	height: 500px;
 	border: 3px solid #333;
 	overflow: hidden;
+	left: 200px;
 }
 #list {
 	position: absolute;
@@ -23,8 +24,8 @@ body {
 	left: 0px;
 }
 #list img {
-	width: 500px;
-	height: 600px;
+	width: 800px;
+	height: 500px;
 	float: left;
 }
 #btns {
@@ -33,7 +34,7 @@ body {
 	width: 100px;
 	z-index: 2;
 	bottom: 20px;
-	left: 200px;
+	left: 350px;
 }
 #btns span {
 	cursor: pointer;
