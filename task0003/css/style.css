@@ -1,3 +1,47 @@
+body {
+	/*background-color: #266a9f;*/
+	background-color: #e9ebee;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+.container .container-header {
+	font-weight: bolder;
+	font-size: 28px;
+	line-height: 2;
+	padding: 5px 0 0 10px;
+	background-color: #3b5998;
+}
+
+.main {
+	/*background-color: #1685dc;*/
+	position: relative;
+	color: #000;
+}
+
 .cate, .task {
-	display: inline-block;
+    float: left;
+    width: 240px;
+}
+
+.to-do {
+	position: absolute;
+	left: 500px;
+	clear: both;
+}
+
+.main footer {
+	position: absolute;
+	bottom: 0;
+}
+
+ul, li {
+	list-style: none;
 }
