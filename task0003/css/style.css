@@ -1,14 +1,23 @@
+html {
+	height: 100%;
+}
+
 body {
 	/*background-color: #266a9f;*/
 	background-color: #e9ebee;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	color: #fff;
-	margin: 0;
+	margin: 0 ;
 	padding: 0;
+	height: 100%;
 }
 
 .container {
+	height: 100%;
+	margin: 0 auto;
+	min-width: 600px;
+	position: relative;
 	margin: 0 auto;
 }
 
@@ -18,12 +27,18 @@ body {
 	line-height: 2;
 	padding: 5px 0 0 10px;
 	background-color: #3b5998;
+	height: 60px;
+	
 }
 
 .main {
 	/*background-color: #1685dc;*/
-	position: relative;
+	position: absolute;
 	color: #000;
+	top: 70px;
+	bottom: 0;
+	width: 100%;
+	min-width: 600px;
 }
 
 .cate, .task {
@@ -34,12 +49,11 @@ body {
 .to-do {
 	position: absolute;
 	left: 500px;
-	clear: both;
 }
 
 .main footer {
-	position: absolute;
-	bottom: 0;
+    position: absolute;
+    bottom: 0;
 }
 
 ul, li {
