@@ -11,12 +11,13 @@ body {
 	margin: 0 ;
 	padding: 0;
 	height: 100%;
+	box-sizing: border-box;
 }
 
 .container {
 	height: 100%;
 	margin: 0 auto;
-	min-width: 600px;
+	min-width: 700px;
 	position: relative;
 	margin: 0 auto;
 }
@@ -28,34 +29,143 @@ body {
 	padding: 5px 0 0 10px;
 	background-color: #3b5998;
 	height: 60px;
-	
+	box-shadow: 2px 2px 2px 1px #266a9f;
 }
 
 .main {
 	/*background-color: #1685dc;*/
 	position: absolute;
 	color: #000;
-	top: 70px;
+	top: 0;
 	bottom: 0;
 	width: 100%;
-	min-width: 600px;
+	min-width: 700px;
 }
 
 .cate, .task {
+	position: absolute;
     float: left;
-    width: 240px;
+    /*border-right: #666 1px solid;*/
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    top: 70px;
+    bottom: 0;
+    line-height: 2;
+    text-indent: 1em;
+}
+
+.cate {
+	background-color: #ddd;
+	width: 245px;
+	z-index: 1000;
+}
+
+.task {
+	left: 240px;
+	z-index: 100;
+	width: 260px;
+}
+
+.cate-all {
+    padding: 10px 0 0 0px;
+}
+
+.cate h4 {
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+	font-size: 16px;
 }
 
 .to-do {
 	position: absolute;
 	left: 500px;
+	top: 70px;
+	bottom: 0;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	padding: 0;
+	line-height: 2;
+	text-indent: 1em;
 }
 
 .main footer {
     position: absolute;
     bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #abc;
+    opacity: 0.8;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 1em #abc;
+}
+
+
+
+footer div {
+	position: absolute;
+	top: 30%;
+	left: 30%;
 }
 
 ul, li {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.active  {
+	background-color: #fff;
+	box-shadow: 0 0 10px #456;
+}
+
+.task-mark {
+	width: 240px;
+	height: 30px;
+	margin: 10px auto;
+}
+
+.task-list {
+	margin-left: 10px;
+}
+
+.date {
+	background-color: #fafaee;
+}
+
+.task-mark span {
+	padding: 3px 10px 3px 10px;
+}
+
+.to-do-title {
+	background-color: #ddd;
+	height: 50px;
+	position: relative;
+	border-bottom: 1px #ccc solid;
+}
+
+.to-do-title h4 {
+	position: absolute;
+	font-size: 20px;
+	bottom: -25px;
+}
+
+.to-do-details {
+	text-indent: 0;
+	margin-left: 1em;
+}
+
+.to-do-date {
+	height: 40px;
+	font-size: 18px;
+	background-color:#faf2ee;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 0;
+	border-bottom: 1px #eeddcc solid;
+}
+
+.task-items li {
+	text-indent: 2em;
 }
